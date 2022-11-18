@@ -12,7 +12,7 @@ if(dados.cnh){
     dados.cnh = 'não possui CNH';
 }
 
-console.log(`${dados.nome} tem ${dados.idade} anos, ${dados.altura}m de altura, ${dados.cnh} e os seguintes apelidos:
-- ${dados.apelido[0]}
-- ${dados.apelido[1]}
-`);
+console.log(`${dados.nome} tem ${dados.idade} anos, ${dados.altura}m de altura, ${dados.cnh} e os seguintes apelidos`);
+for (let apelido of dados.apelido){
+    console.log(`-${apelido}`);
+}
